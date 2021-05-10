@@ -1,5 +1,6 @@
 package views;
 
+import entities.ProductVar;
 import views.collectionview.CollectionMainView;
 import views.productview.ProductMainView;
 
@@ -10,6 +11,8 @@ public class mainView {
     public static void mainMenu() {
     Scanner sc = new Scanner(System.in);
         int option = 99;
+
+        ProductVar product = new ProductVar();
 
         do{
             try{
@@ -38,6 +41,8 @@ public class mainView {
                     System.out.println("------------------------------");
                     System.out.println("Exiting");
                     System.out.println("------------------------------");
+                    product.testePrint();
+
                     break;
                 default:
                     break;
