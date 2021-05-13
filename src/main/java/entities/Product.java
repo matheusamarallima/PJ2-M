@@ -13,7 +13,6 @@ public class Product {
     String subCollectionName;
     List<Attributes> attributesList = new ArrayList<>();
 
-    public static Set<Product> products = new HashSet<>();
 
     public Product(String name, double price, String description, int quantity, String subCollectionName) {
         this.name = name;

@@ -7,17 +7,12 @@ import java.util.Set;
 public class SubCollection extends Collection{
 
 
-    public SubCollection(String name, String description, Set<String> keywords, MainCollection mainCollection) {
+    public SubCollection(String name, String description, Set<String> keywords) {
         super(name, description, keywords);
     }
 
     public SubCollection() {
 
-    }
-
-    public Set<SubCollection> getSubCollectionList() {
-        subCollectionList.stream().findAny().toString();
-        return subCollectionList;
     }
 
     public SubCollection createASubCollection(SubCollection subCollection){

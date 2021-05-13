@@ -1,5 +1,6 @@
 package views.collectionview;
 
+import entities.Collection;
 import entities.SubCollection;
 
 import java.util.HashSet;
@@ -33,7 +34,7 @@ public class CollectionCreationView {
 
     public void insertCollection(){
 
-        MainCollection coll = new MainCollection();
+        Collection coll = new Collection;
         System.out.println("Insert the product's Collection's name:");
         coll.setNameCollection(sc.nextLine());
         System.out.println("Insert the product's Collection's description");

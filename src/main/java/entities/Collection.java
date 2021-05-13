@@ -1,17 +1,17 @@
 package entities;
 
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Collection {
 
-    public static Set<MainCollection> mainCollectionList = new HashSet<>();
-    public static Set<SubCollection> subCollectionList = new HashSet<>();
+    public static Set<Collection> mainCollectionList = new HashSet<>();
+
 
     String nameCollection;
     String descriptionCollection;
     Set<String> keywordsCollection;
+    List<SubCollection> subCollectionList = new ArrayList<>();
+    List<Product> productsList = new ArrayList<>();
 
     public Collection() {
     }
@@ -47,6 +47,8 @@ public class Collection {
         this.keywordsCollection = keywordsCollection;
     }
 
+
+
     public String returnSubCollectionName(String subname){
         for(SubCollection subCollection : subCollectionList){
             if(subCollection.getNameCollection().equalsIgnoreCase(subname)){
@@ -55,6 +57,14 @@ public class Collection {
         }
         return null;
     }
+
+    public SubCollection createASubCollection(SubCollection subCollection){
+        subCollectionList.add(subCollection);
+        return subCollection;
+    }
+
+
+
 
     @Override
     public String toString() {
