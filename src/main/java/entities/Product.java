@@ -97,10 +97,7 @@ public class Product {
     }
 
 
-    public void createAnValue(Values values) {
-        attributesList.add(values);
-        System.out.println(products.toString());
-    }
+
 
 
 
@@ -110,6 +107,7 @@ public class Product {
             if (product.getName() != null) {
                 products1.add("Product name: " + product.getName());
                 products1.add("Product description: " + product.getDescription());
+                products1.add("Product variant" + product.getAttributesList());
             }
         }
         if (products1.size() > 0) {

@@ -1,6 +1,5 @@
 package views.collectionview;
 
-import entities.MainCollection;
 import entities.Product;
 import entities.SubCollection;
 

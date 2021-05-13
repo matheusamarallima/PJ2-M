@@ -1,6 +1,5 @@
 package views.collectionview;
 
-import entities.MainCollection;
 import entities.SubCollection;
 
 import java.util.HashSet;
