@@ -98,6 +98,8 @@ public class VariantView {
         Values val = new Values();
         val.setValueName("Teste de value");
 
+
+
         product.createAProduct(product);
 
         System.out.println("Product created!");

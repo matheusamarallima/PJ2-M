@@ -97,6 +97,12 @@ public class Product {
     }
 
 
+    public void createAnValue(Values values) {
+        attributesList.add(values);
+        System.out.println(products.toString());
+    }
+
+
 
     public void ListAllProductsInProducts() {
         List<String> products1 = new ArrayList<>();

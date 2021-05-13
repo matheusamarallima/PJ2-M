@@ -1,19 +1,20 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Attributes {
     String atbName;
-    List<Values> valuesList;
+    List<Values> valuesList = new ArrayList<>();
 
+
+    public Attributes() {
+
+    }
 
     public Attributes(String atbName, List<Values> valuesList) {
         this.atbName = atbName;
         this.valuesList = valuesList;
-    }
-
-    public Attributes() {
-
     }
 
     public String getAtbName() {
