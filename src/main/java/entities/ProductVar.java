@@ -2,7 +2,6 @@ package entities;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,6 +19,7 @@ public class ProductVar {
 
 
 
+
     public ProductVar() {
         activityPreset();
         colorPreset();
@@ -28,11 +28,14 @@ public class ProductVar {
         clothsSizePreset();
         tShirtTypes();
 
+
     }
 
     private boolean activityPreset(){
         String fill = "a";
         if(fill == "a"){
+
+
             activityList.add("Casual");
             activityList.add("Social Clothing");
             activityList.add("Gym");

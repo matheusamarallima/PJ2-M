@@ -1,8 +1,6 @@
 package views.productview;
 
 import entities.Pants;
-import entities.Sneakers;
-import entities.TShirt;
 import enums.*;
 
 import java.util.Scanner;

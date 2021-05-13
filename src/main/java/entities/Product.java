@@ -11,6 +11,7 @@ public class Product {
     int quantity;
     List<Image> images;
     String subCollectionName;
+    List<Attributes> attributesList = new ArrayList<>();
 
     public static Set<Product> products = new HashSet<>();
 
@@ -68,7 +69,22 @@ public class Product {
         this.subCollectionName = subCollectionName;
     }
 
+    public void setImages(List<Image> images) {
+        this.images = images;
+    }
+
+    public List<Attributes> getAttributesList() {
+        return attributesList;
+    }
+
+    public void setAttributesList(List<Attributes> attributesList) {
+        this.attributesList = attributesList;
+    }
+
     //Methods
+
+
+
 
     public void createAProduct(Product product) {
         products.add(product);
@@ -123,24 +139,13 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product " +
+        return "Product{" +
                 "Name of the product: " + name + '\'' +
                 ", product's price: " + price +
                 ", product's description: " + description + '\'' +
                 ", product's quantity: " + quantity +
-                ' ';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product)) return false;
-        Product product = (Product) o;
-        return Double.compare(product.price, price) == 0 && quantity == product.quantity && Objects.equals(name, product.name) && Objects.equals(description, product.description) && Objects.equals(images, product.images) && Objects.equals(subCollectionName, product.subCollectionName);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, price, description, quantity, images, subCollectionName);
+                ", subCollectionName='" + subCollectionName + '\'' +
+                ", attributesList=" + attributesList +
+                '}';
     }
 }
