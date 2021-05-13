@@ -36,13 +36,13 @@ public class VariantView {
 
             switch (option) {
                 case 1:
-                    createSneakersMenu();
+
                     break;
                 case 2:
-                    createTshirtMenu();
+
                     break;
                 case 3:
-                    createPantsMenu();
+
                     break;
                 case 4:
                     createAnotherTypeOfProduct();
@@ -91,6 +91,12 @@ public class VariantView {
 
         Attributes att = new Attributes();
         att.setAtbName("Teste de atributo");
+
+        product.createAnAttribute(att);
+
+
+        Values val = new Values();
+        val.setValueName("Teste de value");
 
         product.createAProduct(product);
 

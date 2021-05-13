@@ -91,6 +91,13 @@ public class Product {
         System.out.println(products.toString());
     }
 
+    public void createAnAttribute(Attributes attributes) {
+        attributesList.add(attributes);
+        System.out.println(products.toString());
+    }
+
+
+
     public void ListAllProductsInProducts() {
         List<String> products1 = new ArrayList<>();
         for (Product product : products) {
