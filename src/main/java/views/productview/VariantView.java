@@ -21,10 +21,7 @@ public class VariantView {
             try {
                 System.out.println("------------------------------");
                 System.out.println("Select one of the following options\n");
-                System.out.println("1-- Add a Sneaker");
-                System.out.println("2-- Add a T-Shirt");
-                System.out.println("3-- Add Pants");
-                System.out.println("4-- Add a whole new product");
+                System.out.println("1-- Create a product");
                 System.out.println("0-- Exit");
                 System.out.println("------------------------------");
                 option = sc.nextInt();
@@ -36,15 +33,6 @@ public class VariantView {
 
             switch (option) {
                 case 1:
-
-                    break;
-                case 2:
-
-                    break;
-                case 3:
-
-                    break;
-                case 4:
                     createAnotherTypeOfProduct();
                     break;
                 default:
