@@ -1,0 +1,16 @@
+
+M
+java:S1128"7Remove this unused import 'jdk.jfr.internal.tool.Main'.(“ñÀ²
+N
+java:S1854"8Remove this useless assignment to local variable "main".(•œà‰
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ä»¯þÿÿÿÿ
+>
+java:S2440"(Remove this instantiation of "mainView".(•œà‰
+N	java:S106"9Replace this use of System.out or System.err by a logger.(„ßØñ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ôâú×
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ã±Ã_
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(óü½Ä
+M	java:S106'"9Replace this use of System.out or System.err by a logger.(ÝÌÀS
+?
+java:S1481")Remove this unused "main" local variable.(•œà‰

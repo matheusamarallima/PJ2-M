@@ -83,69 +83,13 @@ public class Product {
     //Methods
 
 
-
-
-    public void createAProduct(Product product) {
-        products.add(product);
-        System.out.println(products.toString());
-    }
-
     public void createAnAttribute(Attributes attributes) {
         attributesList.add(attributes);
-        System.out.println(products.toString());
+        System.out.println(attributes.toString());
     }
 
 
 
-
-
-
-    public void ListAllProductsInProducts() {
-        List<String> products1 = new ArrayList<>();
-        for (Product product : products) {
-            if (product.getName() != null) {
-                products1.add("Product name: " + product.getName());
-                products1.add("Product description: " + product.getDescription());
-                products1.add("Product variant" + product.getAttributesList());
-            }
-        }
-        if (products1.size() > 0) {
-            System.out.println(products1);
-        } else {
-            System.out.println("Empty");
-        }
-    }
-
-    public void searchForAProductInProducts(String SearchParameter) {
-        for (Product product : products) {
-                if (product.getName().equalsIgnoreCase(SearchParameter)) {
-                    System.out.println("Product name: " + product.getName());
-                    System.out.println("Product price: " + product.getPrice());
-                    System.out.println("Product description: " + product.getDescription());
-                    break;
-                }
-                System.out.println("Not found");
-            }
-        }
-
-
-    public void searchForAProductInASubCollection(String SearchParameter,String name) {
-        Collection coll = new Collection();
-        String qualquercoisa = coll.returnSubCollectionName(name);
-        for (Product product : products) {
-            try {
-                if (product.getName().equalsIgnoreCase(SearchParameter)) {
-                    product.setSubCollectionName(qualquercoisa);
-                    if (product.getSubCollectionName().equalsIgnoreCase(qualquercoisa)) {
-                        System.out.println("Product's name: " + product.getName()+ "\nProduct's price: " + product.getPrice() + "\nProduct's description: " + product.getDescription());
-                        break;
-                    }
-                }
-            } catch (Exception e) {
-                System.out.println("Product not found");
-            }
-        }
-    }
 
     @Override
     public String toString() {

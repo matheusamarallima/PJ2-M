@@ -4,9 +4,7 @@ import java.util.*;
 
 public class Collection {
 
-    public static Set<Collection> mainCollectionList = new HashSet<>();
-
-
+    public static Set<Collection> collectionList = new HashSet<>();
     String nameCollection;
     String descriptionCollection;
     Set<String> keywordsCollection;
@@ -21,6 +19,14 @@ public class Collection {
         this.nameCollection = nameCollection;
         this.descriptionCollection = descriptionCollection;
         this.keywordsCollection = keywordsCollection;
+    }
+
+    public static Set<Collection> getCollectionList() {
+        return collectionList;
+    }
+
+    public static void setCollectionList(Set<Collection> collectionList) {
+        Collection.collectionList = collectionList;
     }
 
     public String getNameCollection() {
@@ -48,6 +54,69 @@ public class Collection {
     }
 
 
+    public void createProduct(Product product) {
+        productsList.add(product);
+        System.out.println(productsList.toString());
+    }
+
+
+    public void ListAllProductsInProducts() {
+        List<String> products1 = new ArrayList<>();
+        for (Product product : productsList) {
+            if (product.getName() != null) {
+                products1.add("Product name: " + product.getName());
+                products1.add("Product description: " + product.getDescription());
+                products1.add("Product variant" + product.getAttributesList());
+            }
+        }
+        if (products1.size() > 0) {
+            System.out.println(products1);
+        } else {
+            System.out.println("Empty");
+        }
+    }
+
+
+    public void searchForAProductInProducts(String SearchParameter) {
+        for (Product product : productsList) {
+            if (product.getName().equalsIgnoreCase(SearchParameter)) {
+                System.out.println("Product name: " + product.getName());
+                System.out.println("Product price: " + product.getPrice());
+                System.out.println("Product description: " + product.getDescription());
+                break;
+            }
+            System.out.println("Not found");
+        }
+    }
+
+
+    public void searchForAProductInASubCollection(String SearchParameter,String name) {
+        Collection coll = new Collection();
+        String qualquercoisa = coll.returnSubCollectionName(name);
+        for (Product product : productsList) {
+            try {
+                if (product.getName().equalsIgnoreCase(SearchParameter)) {
+                    product.setSubCollectionName(qualquercoisa);
+                    if (product.getSubCollectionName().equalsIgnoreCase(qualquercoisa)) {
+                        System.out.println("Product's name: " + product.getName()+ "\nProduct's price: " + product.getPrice() + "\nProduct's description: " + product.getDescription());
+                        break;
+                    }
+                }
+            } catch (Exception e) {
+                System.out.println("Product not found");
+            }
+        }
+    }
+
+
+
+    public void listAllCollections(){
+        System.out.println(getCollectionList()) ;
+        SubCollection subs = new SubCollection();
+        System.out.println(subCollectionList.toString());
+    }
+
+
 
     public String returnSubCollectionName(String subname){
         for(SubCollection subCollection : subCollectionList){
@@ -62,7 +131,6 @@ public class Collection {
         subCollectionList.add(subCollection);
         return subCollection;
     }
-
 
 
 

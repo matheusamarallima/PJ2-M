@@ -8,6 +8,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import static views.mainView.mainMenu;
+import static views.productview.VariantView.collection;
 
 public class ProductMainView {
 
@@ -46,12 +47,12 @@ public class ProductMainView {
                     System.out.println("------------------------------");
                     System.out.println("Type the term you're looking for");
                     String term = sc.nextLine();
-                    product.searchForAProductInProducts(term);
+                    collection.searchForAProductInProducts(term);
                     System.out.println("------------------------------");
                     break;
                 case 3:
                     System.out.println("------------------------------");
-                    product.ListAllProductsInProducts();
+                    collection.ListAllProductsInProducts();
                     System.out.println("------------------------------");
                     break;
                 case 0:

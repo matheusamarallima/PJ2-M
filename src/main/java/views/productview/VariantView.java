@@ -11,7 +11,7 @@ import static views.mainView.mainMenu;
 public class VariantView {
 
     CollectionCreationView collectionCreationView = new CollectionCreationView();
-    static MainCollection mainCollection = new MainCollection();
+    static Collection collection = new Collection();
     static SubCollection subCollection = new SubCollection();
     static Scanner sc = new Scanner(System.in);
 
@@ -100,7 +100,7 @@ public class VariantView {
 
 
 
-        product.createAProduct(product);
+        collection.createProduct(product);
 
         System.out.println("Product created!");
         mainMenu();

@@ -19,7 +19,6 @@ public class ProductVar {
 
 
 
-
     public ProductVar() {
         activityPreset();
         colorPreset();

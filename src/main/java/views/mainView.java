@@ -35,7 +35,7 @@ public class mainView {
                     ProductMainView.productManagementMainView();
                     break;
                 case 2:
-                    CollectionMainView.collection();
+                    CollectionMainView.collectionManagement();
                     break;
                 case 0:
                     System.out.println("------------------------------");

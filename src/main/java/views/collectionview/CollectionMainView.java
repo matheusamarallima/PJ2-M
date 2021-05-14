@@ -1,5 +1,6 @@
 package views.collectionview;
 
+import entities.Collection;
 import entities.Product;
 import entities.SubCollection;
 
@@ -11,11 +12,11 @@ import static views.mainView.mainMenu;
 public class CollectionMainView {
     static CollectionCreationView coll = new CollectionCreationView();
     static Scanner sc = new Scanner(System.in);
-    static MainCollection mainColl  = new MainCollection();
+    static Collection collection  = new Collection();
     static SubCollection subs = new SubCollection();
     static Product product = new Product();
 
-    public static void collection() {
+    public static void collectionManagement() {
 
         int option = 99;
         do {
@@ -42,14 +43,14 @@ public class CollectionMainView {
                     coll.insertSubCollection();
                     break;
                 case 3:
-                    mainColl.listAllCollections();
+                    collection.listAllCollections();
                     break;
                 case 4:
                     System.out.println("Enter the name of the subcollection");
                     String subsname = sc.nextLine();
                     System.out.println("Type the term you're looking for");
                     String SearchParameter = sc.nextLine();
-                    product.searchForAProductInASubCollection(SearchParameter, subsname);
+                    collection.searchForAProductInASubCollection(SearchParameter, subsname);
                     break;
                 case 0:
                     mainMenu();
