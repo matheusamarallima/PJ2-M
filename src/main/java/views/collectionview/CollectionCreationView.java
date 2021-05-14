@@ -34,11 +34,11 @@ public class CollectionCreationView {
 
     public void insertCollection(){
 
-        Collection coll = new Collection;
+        Collection collection = new Collection();
         System.out.println("Insert the product's Collection's name:");
-        coll.setNameCollection(sc.nextLine());
+        collection.setNameCollection(sc.nextLine());
         System.out.println("Insert the product's Collection's description");
-        coll.setDescriptionCollection(sc.nextLine());
+        collection.setDescriptionCollection(sc.nextLine());
 
         System.out.println("Keywords: ");
         Set<String> keywords = new HashSet<>();
@@ -46,9 +46,9 @@ public class CollectionCreationView {
             System.out.println("Enter the keyword");
             System.out.println("Number: " + (c + 1));
             keywords.add(sc.nextLine());
-        }coll.setKeywordsCollection(keywords);
+        }collection.setKeywordsCollection(keywords);
 
-        coll.createCollection(coll);
+        collection.createCollection(collection);
         System.out.println("Collection created!");
     }
 

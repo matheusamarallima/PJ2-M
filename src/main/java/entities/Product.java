@@ -80,15 +80,11 @@ public class Product {
         this.attributesList = attributesList;
     }
 
-    //Methods
-
 
     public void createAnAttribute(Attributes attributes) {
         attributesList.add(attributes);
         System.out.println(attributes.toString());
     }
-
-
 
 
     @Override

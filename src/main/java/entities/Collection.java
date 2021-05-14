@@ -109,7 +109,6 @@ public class Collection {
     }
 
 
-
     public void listAllCollections(){
         System.out.println(getCollectionList()) ;
         SubCollection subs = new SubCollection();
@@ -125,6 +124,10 @@ public class Collection {
             }System.out.println("Subcollection not found");
         }
         return null;
+    }
+
+    public void createCollection(Collection collection){
+        collectionList.add(collection);
     }
 
     public SubCollection createASubCollection(SubCollection subCollection){
