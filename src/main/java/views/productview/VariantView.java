@@ -85,7 +85,7 @@ public class VariantView {
 
         Values val = new Values();
         val.setValueName("Teste de value");
-
+        att.createAnValue(val);
 
 
         collection.createProduct(product);

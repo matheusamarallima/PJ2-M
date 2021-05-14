@@ -1,0 +1,19 @@
+
+z
+java:S1192"_Define a constant instead of duplicating this literal "------------------------------" 6 times.(Ïíõšûÿÿÿÿ
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(–³µâ
+P
+java:S1118	":Add a private constructor to hide the implicit public one.(–³µâ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(±œ½Â
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²§üÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‰–¶
+M	java:S106"9Replace this use of System.out or System.err by a logger.(İ¶§[
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÀÃç‚øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ü±’í
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(–£ÎÁ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ

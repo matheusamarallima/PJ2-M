@@ -1,0 +1,24 @@
+
+z
+java:S1192"_Define a constant instead of duplicating this literal "------------------------------" 8 times.(Ïíõšûÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(ãÇº
+X
+java:S1854";Remove this useless assignment to local variable "product".(¢¦Ì›8½·ÿØ–/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(òğŒ—
+S	java:S106"9Replace this use of System.out or System.err by a logger.(öŸï”ÿÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(¦úÆ|
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•óˆ€üÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(²îÇÑ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(Œá³·øÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(±Œµãıÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(Ïíõšûÿÿÿÿ
+I
+java:S1481",Remove this unused "product" local variable.(¢¦Ì›8À·ÿØ–/
